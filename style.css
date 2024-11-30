@@ -25,8 +25,8 @@ body {
     margin-right: 20px;
 }
 
-.navbar-logo img {
-    height: 40px; /* Ajuste selon ton logo */
+header nav .logo img {
+    height: 50px; /* Taille du logo, ajustez si nécessaire */
     width: auto;
 }
 
@@ -113,6 +113,7 @@ body {
 
 /* Pied de page */
 footer {
+
     background-color: #8b4513;
     color: #fff;
     text-align: center;
@@ -272,8 +273,8 @@ footer {
 }
 
 .tool-item img {
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -455,4 +456,16 @@ h1 {
         width: 90%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 

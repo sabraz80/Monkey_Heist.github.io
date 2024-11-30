@@ -26,7 +26,7 @@ body {
 }
 
 header nav .logo img {
-    height: 50px; /* Taille du logo, ajustez si nécessaire */
+    height: 40px; /* Taille du logo, ajustez si nécessaire */
     width: auto;
 }
 

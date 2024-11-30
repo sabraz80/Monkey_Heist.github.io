@@ -306,8 +306,8 @@ footer {
 
 /* Styles généraux pour la page de téléchargement */
 .content {
-    padding: 20px;
-    padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
+    padding: 50px 20px;
+    padding-top: 70px; /* Espace pour éviter le chevauchement avec la navbar */
     background-color: #fff;
     min-height: 100vh;
 }

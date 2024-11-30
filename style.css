@@ -57,14 +57,14 @@ header nav .logo img {
 
 /* Section */
 .section {
-    padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
-    padding: 20px;
+    padding-top: 70px; /* Espace pour éviter le chevauchement avec la navbar */
+    padding: 50px 20px;
     background-color: #ffebcd; /* Beige clair */
 }
 
 .section h2 {
     color: #8b4513; /* Marron foncé */
-    padding-top: 100px; /* Espace pour éviter le chevauchement avec la navbar */
+    padding-top: 0px; /* Espace pour éviter le chevauchement avec la navbar */
     font-size: 36px;
     margin-bottom: 40px;
     text-align: center;

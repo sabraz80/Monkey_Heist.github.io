@@ -1,16 +1,17 @@
 /* Thème général */
 body {
     font-family: Arial, sans-serif;
-    color: #1c1c1c; /* Noir profond */
-    background-color: #fffaf0; /* Beige clair */
+    color: #1a1a1a; /* Noir profond */
+    background-color: #f8f8f8; /* grsi clair */
     margin: 0;
     padding: 0;
+
 }
 
 /* Barre de navigation */
 .navbar {
-    background-color: #8b4513; /* Marron foncé */
-    color: #fff;
+    background-color: #000000; /* noir foncé */
+    color: #333;
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,8 +27,8 @@ body {
 }
 
 header nav .logo img {
-    height: 100px; /* Taille du logo, ajustez si nécessaire */
-    width: auto;
+    height: auto; /* Taille du logo, ajustez si nécessaire */
+    width: 40px;
 }
 
 .navbar ul {
@@ -45,7 +46,7 @@ header nav .logo img {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #f9dd16; /* Jaune jungle */
+    color: #ffffff; /* blanc jungle */
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s;
@@ -59,11 +60,13 @@ header nav .logo img {
 .section {
     padding-top: 70px; /* Espace pour éviter le chevauchement avec la navbar */
     padding: 50px 20px;
-    background-color: #ffebcd; /* Beige clair */
+    background-color: #ffffff; /* blanc clair */
+    background: linear-gradient(to bottom, #f8f8f8, #000000);
+
 }
 
 .section h2 {
-    color: #8b4513; /* Marron foncé */
+    color: #1a1a1a; /* noir foncé */
     padding-top: 0px; /* Espace pour éviter le chevauchement avec la navbar */
     font-size: 36px;
     margin-bottom: 40px;
@@ -74,13 +77,13 @@ header nav .logo img {
 
 .section img {
     width: 100%;
-    border: 3px solid #8b4513; /* Bordure marron */
+    border: 3px solid #1a1a1a; /* Bordure noir */
 }
 
 /* Bannière */
 .banner {
-    background: linear-gradient(to bottom, #f9dd16, #8b4513);
-    color: #fff;
+    background: linear-gradient(to top, #f8f8f8, #000000);
+    color: #0a0a0a;
     text-align: center;
     padding: 100px 20px;
     position: relative;
@@ -92,7 +95,7 @@ header nav .logo img {
 }
 
 .banner h1 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
     margin: 0 0 20px 0;
 }
@@ -104,7 +107,7 @@ header nav .logo img {
 
 .banner .btn {
     background-color: #000;
-    color: #f9dd16;
+    color: #f8f8f8;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -113,276 +116,12 @@ header nav .logo img {
 }
 
 .banner .btn:hover {
-    background-color: #f9dd16;
+    background-color: #f8f8f8;
     color: #000;
 }
-
-/* Pied de page */
-footer {
-
-    background-color: #8b4513;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-/* Section Équipe */
-.team-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fffaf0; /* Beige clair */
-}
-
-.team-section h2 {
-    color: #8b4513; /* Marron foncé */
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-/* Grille de l'équipe */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur grand écran */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Case de chaque membre de l'équipe */
-.team-member {
-    background-color: #f9dd16; /* Jaune jungle */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-    transform: scale(1.05); /* Effet d'agrandissement au survol */
-}
-
-/* Image du membre */
-.team-member img {
-    width: 70%;
-    height: 250px;
-    object-fit: cover;
-    border-bottom: 4px solid #8b4513; /* Bordure marron */
-}
-
-/* Zone de texte avec nom et rôle */
-.team-info {
-    padding: 20px;
-    background-color: #8b4513; /* Marron foncé */
-    color: #fff;
-}
-
-.team-info h3 {
-    font-size: 20px;
-    margin: 0;
-}
-
-.team-info p {
-    font-size: 16px;
-    margin: 10px 0 0;
-}
-
-/* Responsivité : pour les petits écrans */
-@media (max-width: 768px) {
-    .team-grid {
-        grid-template-columns: 1fr 1fr; /* 2 colonnes sur écran moyen */
-    }
-}
-
-@media (max-width: 480px) {
-    .team-grid {
-        grid-template-columns: 1fr; /* 1 colonne sur mobile */
-    }
-}
-
-
-/* Section Ressources */
-.resources-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fffaf0; /* Beige clair */
-}
-
-/* Titre de la section */
-.resources-section h2 {
-    color: #8b4513; /* Marron foncé */
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-/* Section Rapports */
-.reports-section h3 {
-    font-size: 28px;
-    color: #8b4513; /* Marron foncé */
-    margin-bottom: 30px;
-}
-
-.reports-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur grand écran */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.report-item {
-    background-color: #f9dd16; /* Jaune jungle */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.report-item:hover {
-    transform: scale(1.05); /* Effet d'agrandissement au survol */
-}
-
-.report-item img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.report-item p {
-    font-size: 16px;
-    color: #8b4513;
-}
-
-/* Section Outils Utilisés */
-.tools-section h3 {
-    font-size: 28px;
-    color: #8b4513;
-    margin-bottom: 30px;
-}
-
-.tools-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur grand écran */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.tool-item {
-    background-color: #f9dd16;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.tool-item img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.tool-item p {
-    font-size: 16px;
-    color: #8b4513;
-}
-
-/* Responsivité : pour les petits écrans */
-@media (max-width: 768px) {
-    .reports-grid, .tools-grid {
-        grid-template-columns: 1fr 1fr; /* 2 colonnes sur écran moyen */
-    }
-}
-
-@media (max-width: 480px) {
-    .reports-grid, .tools-grid {
-        grid-template-columns: 1fr; /* 1 colonne sur mobile */
-    }
-}
-
-
-/* Styles généraux pour la page de téléchargement */
-.content {
-    padding: 50px 20px;
-    padding-top: 70px; /* Espace pour éviter le chevauchement avec la navbar */
-    background-color: #fff;
-    min-height: 100vh;
-}
-
-h1 {
-    color: #8b4513; /* Marron foncé */
-    font-size: 32px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.download-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.download-button {
-    flex: 1;
-    text-align: center;
-}
-
-.download-button button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #f9dd16; /* Jaune */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.download-button button:hover {
-    background-color: #e1c100; /* Jaune foncé au survol */
-}
-
-.download-info {
-    flex: 1;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 30px;
-}
-
-.download-info h2 {
-    color: #8b4513;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.download-info p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* Pour les petits écrans */
-@media screen and (max-width: 768px) {
-    .download-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .download-info {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-}
-
 /* Section About Monkey Heist */
 .about-section {
-    background-color: #f1f1f1; /* Gris clair */
+    background-color: #d3d3d3; /* Gris clair */
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -390,7 +129,7 @@ h1 {
 }
 
 .about-section h2 {
-    color: #8b4513; /* Marron foncé */
+    color: #1a1a1a; /* Marron foncé */
     font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
@@ -405,14 +144,14 @@ h1 {
 
 /* Section Features */
 .features-section {
-    background-color: #fff;
+    background-color: #d3d3d3;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .features-section h2 {
-    color: #8b4513; /* Marron foncé */
+    color: #1a1a1a; /* Marron foncé */
     font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
@@ -426,7 +165,7 @@ h1 {
 
 .feature {
     flex: 1;
-    background-color: #f9dd16; /* Jaune */
+    background-color: #f8f8f8; /* Jaune */
     padding: 15px;
     margin: 0 10px;
     border-radius: 8px;
@@ -436,7 +175,7 @@ h1 {
 }
 
 .feature h3 {
-    color: #8b4513; /* Marron foncé */
+    color: #1a1a1a; /* Marron foncé */
     font-size: 22px;
     margin-bottom: 10px;
 }
@@ -468,6 +207,278 @@ h1 {
 
 
 
+
+
+
+/* Pied de page */
+footer {
+
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Section Équipe */
+.team-section {
+    padding:  50px;
+    text-align: center;
+    background-color: #fffaf0; /* Beige clair */
+}
+
+.team-section h2 {
+    color: #1a1a1a; /* Marron foncé */
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Grille de l'équipe */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur grand écran */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Case de chaque membre de l'équipe */
+.team-member {
+    background-color: #f8f8f8; /* Jaune jungle */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+/* Image du membre */
+.team-member img {
+    width: 70%;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #1a1a1a; /* Bordure noir */
+}
+
+/* Zone de texte avec nom et rôle */
+.team-info {
+    padding: 20px;
+    background-color: #1a1a1a; /* Marron foncé */
+    color: #fff;
+}
+
+.team-info h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.team-info p {
+    font-size: 16px;
+    margin: 10px 0 0;
+}
+
+/* Responsivité : pour les petits écrans */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr 1fr; /* 2 colonnes sur écran moyen */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    }
+}
+
+
+/* Section Ressources */
+.resources-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff; /* Beige clair */
+}
+
+/* Titre de la section */
+.resources-section h2 {
+    color: #1a1a1a; /* Marron foncé */
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Section Rapports */
+.reports-section h3 {
+    font-size: 28px;
+    color: #1a1a1a; /* Marron foncé */
+    margin-bottom: 30px;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur grand écran */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.report-item {
+    background-color: #f8f8f8; /* Jaune jungle */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.report-item:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+.report-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+
+}
+
+.report-item p {
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+/* Section Outils Utilisés */
+.tools-section h3 {
+    font-size: 28px;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur grand écran */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tool-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+
+.tool-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border: 3px solid #1a1a1a; /* Bordure noir */
+}
+.tool-item:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+.tool-item p {
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+/* Responsivité : pour les petits écrans */
+@media (max-width: 768px) {
+    .reports-grid, .tools-grid {
+        grid-template-columns: 1fr 1fr; /* 2 colonnes sur écran moyen */
+    }
+}
+
+@media (max-width: 480px) {
+    .reports-grid, .tools-grid {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    }
+}
+
+
+/* Styles généraux pour la page de téléchargement */
+.content {
+    padding: 50px 20px;
+    padding-top: 70px; /* Espace pour éviter le chevauchement avec la navbar */
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #1a1a1a; /* Marron foncé */
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.download-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.download-button {
+    flex: 1;
+    text-align: center;
+}
+
+.download-button button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #000000; /* Jaune */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button button:hover {
+    background-color: #333; /* Jaune foncé au survol */
+}
+
+.download-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #d3d3d3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+}
+
+.download-info h2 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.download-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .download-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
 
 
 

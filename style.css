@@ -80,6 +80,31 @@ header nav .logo img {
     border: 3px solid #1a1a1a; /* Bordure noir */
 }
 
+
+.story {
+    padding-top: 70px; /* Espace pour éviter le chevauchement avec la navbar */
+    padding: 50px 20px;
+    background-color: #ffffff; /* blanc clair */
+
+}
+
+.story h2 {
+    color: #1a1a1a; /* noir foncé */
+    padding-top: 0px; /* Espace pour éviter le chevauchement avec la navbar */
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+
+
+}
+
+.story img {
+    width: 100%;
+    border: 3px solid #1a1a1a; /* Bordure noir */
+}
+
+
+
 /* Bannière */
 .banner {
     background: linear-gradient(to top, #f8f8f8, #000000);

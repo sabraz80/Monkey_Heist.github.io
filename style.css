@@ -83,7 +83,7 @@ header nav .logo img {
 
 
 .story {
-    padding-top: 70px; /* Espace pour éviter le chevauchement avec la navbar */
+    padding-top: 50px; /* Espace pour éviter le chevauchement avec la navbar */
     padding: 50px 20px;
     background-color: #ffffff; /* blanc clair */
 

@@ -91,7 +91,7 @@ header nav .logo img {
 
 .story h2 {
     color: #1a1a1a; /* noir foncé */
-    padding-top: 0px; /* Espace pour éviter le chevauchement avec la navbar */
+    padding-top: 10px; /* Espace pour éviter le chevauchement avec la navbar */
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center;

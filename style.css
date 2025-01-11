@@ -581,6 +581,88 @@ h1 {
 
 
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+
+
+/* Style général de la chronologie */
+.timeline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alignement horizontal des événements */
+    justify-content: space-around; /* Espacement égal entre les événements */
+    position: relative;
+}
+
+/* Style de chaque événement */
+.timeline .event {
+    display: flex;
+    flex-direction: column; /* Organise chaque événement en colonne (cercle et contenu) */
+    align-items: center;
+    cursor: pointer;
+    text-align: center; /* Centre le texte */
+    margin-right: 20px; /* Espacement entre les événements */
+    width: 25%; /* Réduit la largeur de chaque événement à environ 1/4 de la page */
+    max-width: 300px; /* Limite la largeur maximale pour les grands écrans */
+}
+
+/* Le cercle de chaque événement */
+.timeline .event .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Espacement entre le cercle et le contenu */
+    position: relative;
+    z-index: 2;
+}
+
+/* Contenu caché au départ */
+.timeline .event .content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 50%; /* Réduit la hauteur du texte */
+    overflow: hidden; /* Cache le texte qui dépasse */
+    margin-top: 10px;
+}
+
+/* Lorsque l'événement est activé, on affiche le contenu */
+.timeline .event.active .content {
+    display: block;
+    opacity: 1;
+}
+
+/* Réduire la taille des paragraphes */
+.timeline .event .content p {
+    font-size: 0.9em; /* Réduit la taille de la police du texte */
+    margin: 0;
+    padding: 0;
+}
+
+/* Réduire la taille des titres */
+.timeline .event .content h3 {
+    font-size: 1.1em; /* Réduit légèrement la taille du titre */
+}
+
+/* Supprimer l'image */
+.timeline .event .timeline-image {
+    display: none; /* On cache l'image */
+}
+
+
 
 
 

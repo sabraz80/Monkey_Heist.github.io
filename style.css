@@ -354,24 +354,19 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Couleur noire semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur de l'overlay */
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 18px;
-    opacity: 0; /* Caché par défaut */
-    transition: opacity 0.3s ease; /* Transition pour un effet fluide */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-/* Effet au survol */
 .image-container:hover .overlay {
-    opacity: 1; /* L'overlay devient visible */
-}
-
-/* Facultatif : atténuer l'image au survol */
-.image-container:hover img {
-    opacity: 0.5; /* Rend l'image plus sombre au survol */
+    opacity: 1; /* Rend le texte visible au survol */
 }
 
 

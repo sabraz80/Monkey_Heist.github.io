@@ -347,27 +347,7 @@ footer {
 
 
 
-/* L'overlay qui sera visible au survol */
-.image-container .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Couleur de l'overlay */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
 
-.image-container:hover .overlay {
-    opacity: 1; /* Rend le texte visible au survol */
-}
 
 
 /* Responsivité : pour les petits écrans */

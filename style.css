@@ -343,23 +343,35 @@ footer {
     margin: 10px 0 0;
 }
 
+
+
+
+
+/* L'overlay qui sera visible au survol */
 .image-container .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Couleur semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur noire semi-transparente */
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    font-size: 18px;
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.3s ease; /* Transition pour un effet fluide */
 }
 
+/* Effet au survol */
 .image-container:hover .overlay {
-    opacity: 1;
+    opacity: 1; /* L'overlay devient visible */
+}
+
+/* Facultatif : atténuer l'image au survol */
+.image-container:hover img {
+    opacity: 0.5; /* Rend l'image plus sombre au survol */
 }
 
 

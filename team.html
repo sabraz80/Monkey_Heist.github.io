@@ -101,8 +101,64 @@ Pour ce projet, je suis responsable de la partie musique et de l’interface.</d
         </div>
     </section>
 
+
+    <!-- Section Chronologie -->
+<section class="timeline-section">
+    <h2>Chronologie du Projet</h2>
+    <ul class="timeline">
+        <li class="event" onclick="toggleEvent(this)">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>Commencement</h3>
+                <p>Le projet a débuté par une phase de réflexion approfondie en septembre 2024. 
+                    Cette étape a permis d’établir les bases conceptuelles de "Monkey Heisty" et d’explorer les idées de gameplay, les mécaniques de jeu et l’identité visuelle. 
+                    Ces réflexions ont conduit à une définition claire des objectifs du projet et à l'identification des outils nécessaires pour sa réalisation.
+                    En parallèle, le cahier des charges fonctionnel et technique a été élaboré pour définir les fonctionnalités attendues et préciser les technologies à utiliser et les étapes de développement.</p>
+                <img src="chro.png" alt="Tests 1" width="100%">
+            </div>
+        </li>
+        <li class="event" onclick="toggleEvent(this)">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>Soutenance n°1(encours)</h3>
+                <p>En janvier 2025, la première soutenance a permis de présenter les premiers prototypes et les éléments déjà modélisés. Cette présentation a offert 
+                    une vue d’ensemble du travail réalisé, mettant en avant les mécanismes de base du gameplay, 
+                    la modélisation et les premières implémentations techniques. Elle permet également d’obtenir des retours pour orienter les prochaines phases.</p>
+                <img src="S1.png" alt="Modélisation" width="100%">
+            </div>
+        </li>
+        <li class="event" onclick="toggleEvent(this)">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>Soutenance n°2</h3>
+                <p>Prévue pour mars 2025, la deuxième soutenance s’articulera autour des résultats des tests, des améliorations apportées au gameplay et des ajouts 
+                    finaux comme les musiques, les effets sonores,
+                    et l’intégration complète des interfaces utilisateur. . Les retours obtenus lors de cette soutenance ont permis d’affiner les détails du projet.</p>
+                <img src="encour.jpeg" alt="Soutenances" width="100%">
+            </div>
+        </li>
+        <li class="event" onclick="toggleEvent(this)">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>Soutenance Finale</h3>
+                <p>En mai 2025, la soutenance finale marquera l’achèvement du projet. Le jeu complet, incluant le site internet optimisé, le trailer officiel, et un gameplay 
+                    seront finalisés Ce sera l’occasion de mettre en lumière tous les aspects du jeu et d’envisager la phase de diffusion ou de lancement.. </p>
+                <img src="encour.jpeg" alt="Soutenances" width="100%">
+            </div>
+        </li>
+    </ul>
+</section>
+
+
     <footer>
         <p>© 2024 Monkey Vault Studios. Tous droits réservés.</p>
     </footer>
+
+        <script>
+        function toggleEvent(eventElement) {
+    // Basculer la classe active sur l'élément cliqué uniquement
+    eventElement.classList.toggle("active");
+}
+    </script>
 </body>
 </html>
